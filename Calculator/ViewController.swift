@@ -16,14 +16,26 @@ class ViewController: UIViewController {
     
     @IBAction func appendDigit(sender: UIButton) {
         let digit = sender.currentTitle!
+        
+        if digit == "." && display.text!.rangeOfString(".") != nil {
+            println("We already have a decimal silly...")
+            println("This ain\'t no ip address!")
+            return
+        }
+        
         if userIsInTheMiddleOfTypingNumber {
             display.text = display.text! + digit
         }
         else {
-            display.text = digit
+            if digit == "." && display.text! == "0"{
+                //We aren't neanderthals here, right?
+                display.text = "0" + digit
+            }
+            else{
+                display.text = digit
+            }
             userIsInTheMiddleOfTypingNumber = true
         }
-        //println("digit = \(digit)")
     }
     
     @IBAction func operate(sender: UIButton) {
