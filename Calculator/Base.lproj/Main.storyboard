@@ -176,7 +176,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lbJ-Rg-GxE">
                                 <rect key="frame" x="472" y="75" width="104" height="123"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal">
+                                <state key="normal" title="sin">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -186,21 +186,11 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d3i-a3-WEP">
                                 <rect key="frame" x="472" y="206" width="104" height="124"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal">
+                                <state key="normal" title="cos">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="operate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T4h-xe-rk0"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J4h-7k-Adg">
-                                <rect key="frame" x="472" y="338" width="104" height="123"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="operate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cW7-ZB-Aim"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EFW-R1-0K6">
@@ -221,6 +211,16 @@
                                 </state>
                                 <connections>
                                     <action selector="appendDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hwC-hK-pnQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J4h-7k-Adg">
+                                <rect key="frame" x="472" y="338" width="104" height="123"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="π">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="operate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cW7-ZB-Aim"/>
                                 </connections>
                             </button>
                         </subviews>
